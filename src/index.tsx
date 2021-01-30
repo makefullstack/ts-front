@@ -9,7 +9,7 @@ import axios from "axios";
 import rootReducer from "./reducer/rootReducer";
 import rootSaga from "./saga/rootSaga";
 
-axios.defaults.baseURL = "http://localhost:3000";
+axios.defaults.baseURL = "http://140.238.29.124:3000/";
 
 const sagaMiddleware = createSagaMiddleware();
 const store = configureStore({ reducer: rootReducer, middleware: [sagaMiddleware, logger] as const });
