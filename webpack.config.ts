@@ -3,8 +3,8 @@ import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
 import { Configuration } from "webpack";
 
 const config: Configuration = {
-  mode: "development",
-  devtool: "eval", // hidden-source-map
+  mode: "production",
+  devtool: "hidden-source-map", // hidden-source-map
   resolve: {
     extensions: [".jsx", ".js", ".tsx", ".ts"],
   },
